@@ -371,15 +371,21 @@ mostrar('inicio');
     });
   });
 
-  // Selecciona todos los links dentro del navbar
-  const navLinks = document.querySelectorAll('.navbar .nav-link');
-  const navbarCollapse = document.querySelector('.navbar-collapse');
+// Selecciona todos los links dentro del navbar
+const navLinks = document.querySelectorAll('.navbar .nav-link');
+const navbarCollapse = document.querySelector('.navbar-collapse');
 
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      // Cierra el collapse solo si está abierto
-      if (navbarCollapse.classList.contains('show')) {
-        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: true });
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Cierra el collapse solo si está abierto
+    if (navbarCollapse.classList.contains('show')) {
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse); // Obtener instancia existente
+      if (bsCollapse) {
+        bsCollapse.hide(); // Cierra el menú
+      } else {
+        // Si no existe la instancia, crea una y cierra
+        new bootstrap.Collapse(navbarCollapse).hide();
       }
-    });
+    }
   });
+});
