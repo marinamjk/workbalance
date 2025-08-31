@@ -345,47 +345,23 @@ function mostrar(seccion, event) {
 // Mostrar inicio por defecto
 mostrar('inicio');
 
-  const form = document.getElementById('formulario');
-  const confirmacion = document.getElementById('confirmacion');
+function mostrar(seccion, event) {
+  document.getElementById('contenido').innerHTML = secciones[seccion];
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que la página se recargue
+  // Actualiza clases 'active'
+  document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+  if (event) event.target.classList.add('active');
 
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    })
-    .then(response => {
-      if (response.ok) {
-        confirmacion.style.display = 'block';  // Muestra el mensaje
-        form.reset(); // Limpia el formulario
-      } else {
-        alert("Hubo un error al enviar el mensaje.");
-      }
-    })
-    .catch(error => {
-      alert("Hubo un error al enviar el mensaje.");
-    });
-  });
-
-// Selecciona todos los links dentro del navbar
-const navLinks = document.querySelectorAll('.navbar .nav-link');
-const navbarCollapse = document.querySelector('.navbar-collapse');
-
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    // Cierra el collapse solo si está abierto
-    if (navbarCollapse.classList.contains('show')) {
-      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse); // Obtener instancia existente
-      if (bsCollapse) {
-        bsCollapse.hide(); // Cierra el menú
-      } else {
-        // Si no existe la instancia, crea una y cierra
-        new bootstrap.Collapse(navbarCollapse).hide();
-      }
+  // Cerrar menú en móvil si está abierto
+  const navbarCollapse = document.getElementById('navbarNav');
+  if (navbarCollapse.classList.contains('show')) {
+    const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+    if (bsCollapse) {
+      bsCollapse.hide();
+    } else {
+      new bootstrap.Collapse(navbarCollapse).hide();
     }
-  });
-});
+  }
+}
+
+
