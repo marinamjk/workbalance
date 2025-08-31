@@ -14,26 +14,36 @@ const secciones = {
   </div>
 </div>
 
-<div class="container mt-5">
-      <section id= "descripcion" class="py-5">
-      <div class="row align-items-center">
-          <p><strong>WorkBalance</strong> acompaña a las empresas en la implementación de 
-          programas de bienestar laboral, promoviendo hábitos saludables mediante la realización de
-           <strong>pausas activas</strong> para fortalecen la motivación y la productividad de los equipos.. </br>
-            Este programa se consituye en base a la "Resolución 886/15" de la Superintendencia de Riesgos del Trabajo  "Protocolo de Ergonomía"
-            como herramienta obligatoria para prevenir trastornos músculo-esqueléticos, hernias, y 
-            otras dolencias relacionadas con la actividad laboral. Esta resolución establece protocolos 
-            para la identificación de riesgos y la implementación de medidas correctivas y preventivas 
-            en el ámbito laboral, aplicándose a todos los empleadores del país. 
-            </p>
+<section id="descripcion">   
+    <div class= "container mt-5">
+      <div class="row">
+        <div class="col">
+          <p>
+            <strong>WorkBalance</strong> acompaña a las empresas en la implementación de programas de bienestar laboral,
+            promoviendo hábitos saludables mediante la realización de <strong>pausas activas</strong>. 
+            Estas prácticas contribuyen a fortalecer la motivación, mejorar la productividad y prevenir el agotamiento
+            en los equipos de trabajo.
+          </p>
+
+          <p>
+            El programa se sustenta en la <em>"Resolución 886/15"</em> de la Superintendencia de Riesgos del Trabajo,
+            que establece el <strong>Protocolo de Ergonomía</strong> como herramienta obligatoria para prevenir
+            trastornos músculo-esqueléticos, hernias y otras dolencias asociadas a la actividad laboral.
+            Esta normativa define lineamientos para identificar riesgos y aplicar medidas preventivas y correctivas,
+            siendo de cumplimiento para todos los empleadores del país.
+          </p>
+        </div>
+          <div class="text-center mt-4">
+            <img src="img/flechas.gif" class="img-fluid" style="max-width: 100px; height: auto;" >
+          </div>
       </div>
-      </section>
-       
+    </div>
+</section>
 
-<section class="py-5">
-  <h2 class="mb-4 text-center">¿Qué son las pausas activas?</h2>
+<section>
+  <h2>¿Qué son las pausas activas?</h2>
 
-  <div class="section-card h-100 p-3">
+  <div class="h-100 p-3">
     <div class="row align-items-center">
       <!-- Texto -->
       <div class="col-md-6">
@@ -56,9 +66,8 @@ const secciones = {
   </div>
 </section>
 
-  <section class="py-5">
-  <h2 class="mb-4 text-center">Tipos de ejercicios</h2>
-
+<section class="py-5">
+  <h2>Tipos de ejercicios</h2>
   <div class="row g-4 justify-content-center">
 
     <!-- Card Movilidad articular (doble ancho) -->
@@ -67,7 +76,7 @@ const secciones = {
         <div class="row align-items-center">
           <!-- Texto -->
           <div class="col-md-6">
-            <h5 class="mb-2"><i class="bi bi-bar-chart-line"></i> Movilidad articular</h5>
+            <h5 class="mb-2">Movilidad articular</h5>
             <p>Rotaciones y flexiones de articulaciones para mantener su rango de movimiento y prevenir rigidez.</p>
           </div>
           <!-- Imagen -->
@@ -81,7 +90,7 @@ const secciones = {
     <!-- Card Estiramientos -->
     <div class="col-md-6 col-lg-4 mb-4">
       <div class="section-card h-100 p-3" data-aos="zoom-in">
-        <h5 class="mb-2"><i class="bi bi-bar-chart-line"></i> Estiramientos</h5>
+        <h5 class="mb-2">Estiramientos</h5>
         <p>Movimientos suaves que alargan músculos y articulaciones para reducir tensión y mejorar la flexibilidad.</p>
       </div>
     </div>
@@ -96,7 +105,7 @@ const secciones = {
           </div>
           <!-- Texto -->
           <div class="col-md-6">
-            <h5 class="mb-2"><i class="bi bi-bar-chart-line"></i> Fortalecimiento ligero</h5>
+            <h5 class="mb-2">Fortalecimiento ligero</h5>
             <p>Ejercicios suaves que activan músculos clave, especialmente espalda, piernas y abdomen, sin fatigar.</p>
           </div>         
         </div>
@@ -107,7 +116,7 @@ const secciones = {
     <!-- Card Relajación y respiración -->
     <div class="col-md-6 col-lg-4 mb-4 mx-auto">
       <div class="section-card h-100 p-3" data-aos="zoom-in">
-        <h5 class="mb-2"><i class="bi bi-bar-chart-line"></i> Relajación y respiración</h5>
+        <h5 class="mb-2">Relajación y respiración</h5>
         <p>Técnicas para oxigenar el cuerpo, reducir estrés y relajar músculos.</p>
       </div>
     </div>
@@ -118,7 +127,7 @@ const secciones = {
 
           <!-- Texto -->
           <div class="col-md-6">
-            <h5 class="mb-2"><i class="bi bi-bar-chart-line"></i> Postura y activación</h5>
+            <h5 class="mb-2">Postura y activación</h5>
             <p>Movimientos que corrigen la postura y activan el cuerpo después de estar mucho tiempo sentado o estático.</p>
           </div>  
           <!-- Imagen -->
@@ -136,9 +145,8 @@ const secciones = {
   nosotros: `
   <section class="section section--alt">
   <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="class="mb-4 text-center">Sobre Nosotros</h2>
-    </div>
+    
+    <h2>Sobre Nosotros</h2>
 
     <div class="row g-4">
       <div class="col-lg-12">
@@ -173,74 +181,68 @@ const secciones = {
 </section>
       `,
   servicios: `
-  <section class="section section--alt">
-   <div class="container mb-5">
-    <div class="text-center mb-5">
-      <h2 class="class="mb-4 text-center">Nuestra propuesta
-      </h2>
-    </div>
- 
-    <p class="fs-5 text-muted lh-lg">
+<section class="section section--alt">
+  
+  <h2>Nuestra propuesta</h2>
+
+  <div class="section-servicios">
+    <p>
       En <strong>WorkBalance</strong> creemos que el bienestar laboral se construye a través de pequeños hábitos 
       que generan grandes cambios. Nuestro propósito es enseñar a los trabajadores ejercicios 
       simples y efectivos adaptados a las demandas de su actividad diaria para que puedan realizarlos
        durante pausas activas.
     </p>
- 
+  </div> 
 
-  <div class="parallax parallax--autogestion">
-    <div class="parallax-content text-center text-white py-5">
-      <h3 class="mb-0 fw-semibold display-6">• Autogestión • Hábitos • Beneficios</h3>
+    <div class="parallax parallax--autogestion">
+      <div class="parallax-content text-center text-white py-5">
+        <h3 class="mb-0 fw-semibold display-6">• Autogestión • Hábitos • Beneficios</h3>
+      </div>
     </div>
-  </div>
 
-  <div class="container my-5">
-    <p class="fs-5 text-muted lh-lg">
+      <div class="section-servicios">
+      <p>
       Estos ejercicios están diseñados para que los trabajadores puedan realizar movimientos
       de manera segura y ergonómica, corrigiendo y previniendo malas posturas, aliviando la 
       tensión muscular y fortaleciendo los músculos antagonistas, de manera que estos hábitos 
       sean directamente transferibles a las tareas y movimientos que requieren en su trabajo, 
       como levantar peso, manipular herramientas o mantenerse activos frente a un escritorio.
-    </p>
-  </div>
+      </p>
+      </div>
 
-  <div class="parallax parallax--movilidad">
-    <div class="parallax-content text-center text-white py-5">
-      <h3 class="mb-0 fw-semibold display-6">• Fuerza • Flexibilidad • Ergonomía</h3>
+    <div class="parallax parallax--movilidad">
+      <div class="parallax-content text-center text-white py-5">
+        <h3 class="mb-0 fw-semibold display-6">• Fuerza • Flexibilidad • Ergonomía</h3>
+      </div>
     </div>
-  </div>
 
-  <div class="container my-5">
-    <p class="fs-5 text-muted lh-lg">
+      <div class="section-servicios">
+      <p>
       Además, incorporamos actividades recreativas grupales que fortalecen la integración, 
       el trabajo en equipo y fomentan un clima laboral positivo y motivador, promoviendo
       la conexión entre los colaboradores y la organización. 
       Con esta combinación de ejercicios ergonómicos y actividades recreativas, 
       en <strong>WorkBalance</strong> acompañamos a las empresas en la creación de entornos de 
       trabajo más saludables, productivos y sostenibles en el tiempo.
-    </p>
-  </div>
+      </p>
+      </div>
 
-  <div class="parallax parallax--recreacion">
-    <div class="parallax-content text-center text-white py-5">
-      <h3 class="mb-0 fw-semibold display-6">• Trabajo en equipo • Clima positivo</h3>
+    <div class="parallax parallax--recreacion">
+      <div class="parallax-content text-center text-white py-5">
+        <h3 class="mb-0 fw-semibold display-6">• Trabajo en equipo • Clima positivo</h3>
+      </div>
     </div>
-  </div>
  </div>
 </section>
 
       `,
   beneficios: `
   <section class="section section--alt">
-   <div class="container mb-5">
-    <div class="text-center mb-5">
-      <h2 class="class="mb-4 text-center">Beneficios
-      </h2>
-    </div>
+    <h2 class="class="mb-4 text-center">Beneficios</h2>
 
     <div class="row">
       <!-- Empleador -->
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 mb-4" data-aos="flip-right">
         <div class="card shadow-sm h-100">
           <div class="card-body">
             <h4 class="card-title titulo-empleador">Para el Empleador</h4>
@@ -257,7 +259,7 @@ const secciones = {
         </div>
       </div>
       <!-- Empleados -->
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 mb-4" data-aos="flip-left">
         <div class="card shadow-sm h-100">
           <div class="card-body">
             <h4 class="card-title titulo-empleados"> Para los Empleados</h4>
@@ -278,7 +280,7 @@ const secciones = {
 </section>
       `,
   contacto: `
-<section class="section" style="background-color: var(--bg);">
+<section class="section" style="background-color: var(--color-gris-claro);">
   <div class="container">
     <!-- Título -->
     <div class="text-center mb-5">
@@ -367,5 +369,18 @@ mostrar('inicio');
     })
     .catch(error => {
       alert("Hubo un error al enviar el mensaje.");
+    });
+  });
+
+  // Selecciona todos los links dentro del navbar
+  const navLinks = document.querySelectorAll('.navbar .nav-link');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Cierra el collapse solo si está abierto
+      if (navbarCollapse.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: true });
+      }
     });
   });
