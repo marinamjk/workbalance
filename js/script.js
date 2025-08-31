@@ -304,7 +304,7 @@ const secciones = {
             <input type="email" class="form-control" name="email" required>
           </div>
           <div class="mb-3">
-            <label class="form-label">Mensaje</label>
+            <label class="form-label" name="mensaje" required>Mensaje</label>
             <textarea class="form-control" rows="4" required></textarea>
           </div>
           <button class="btn btn-coral w-100" type="submit">
