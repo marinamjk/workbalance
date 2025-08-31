@@ -8,9 +8,9 @@ const secciones = {
     </div>
     <h1 class="text-white fw-bold animate-fade">Bienvenido a WorkBalance</h1>
     <p class="text-white animate-fade-delay">Tu bienestar laboral comienza acá</p>
-<a href="#descripcion" class="btn btn-primary btn-lg mt-3 animate-fade-delay2">
-  Conocé más
-</a>
+    <a href="#descripcion" class="btn btn-primary btn-lg mt-3 animate-fade-delay2">
+    Conocé más
+    </a>
   </div>
 </div>
 
@@ -111,7 +111,6 @@ const secciones = {
         </div>
       </div>
     </div>
-  
 
     <!-- Card Relajación y respiración -->
     <div class="col-md-6 col-lg-4 mb-4 mx-auto">
@@ -183,7 +182,7 @@ const secciones = {
   servicios: `
 <section class="section section--alt">
   
-  <h2>Nuestra propuesta</h2>
+  <h2>Nuestra propuesta de bienestar laboral</h2>
 
   <div class="section-servicios">
     <p>
