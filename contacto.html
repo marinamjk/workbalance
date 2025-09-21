@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>WorkBalance</title>
+  <meta name="description" content="Servicio de bienestar laboral a través de pausas activas, ejercicios fisicos y actividades recreativas.">
+
+  <meta name="keywords" content="
+  pausas activas, ejercicios laborales, bienestar, salud en oficina, ergonomía,
+  programa de bienestar laboral, bienestar corporativo, acondicionamiento físico en el trabajo,
+  actividad física para empresas, educación física en el trabajo,
+  pausas activas zona norte, pausas activas Capital Federal, pausas activas zona oeste Buenos Aires,
+  bienestar laboral zona norte, bienestar laboral Capital Federal, bienestar laboral zona oeste Buenos Aires
+  ">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">        
+        <span>WorkBalance</span>
+      </a>
+
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">          
+          <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Servicios
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+      <li><a class="dropdown-item" href="medicinalaboral.html">Medicina Laboral en Planta</a></li>
+      <li><a class="dropdown-item" href="actividadfisica.html">Actividad Física</a></li>
+    </ul>
+  </li>
+          <li class="nav-item"><a class="nav-link" href="beneficios.html">Beneficios</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+    <section class="section" style="background-color: var(--color-gris-claro);">
+  <div class="container">
+    <!-- Título -->
+    <div class="text-center mb-5">
+    <h2 class="class="mb-4 text-center">Contacto</h2>      
+      <p class="text-muted">Contanos sobre tu empresa y armamos un plan a medida.</p>
+    </div>
+
+    <!-- Fila con formulario y WhatsApp -->
+    <div class="row justify-content-center g-4">
+      <!-- Formulario -->
+      <div class="col-lg-6">
+        <form class="p-4 shadow-sm rounded bg-white" action="https://formspree.io/f/xldwbajy" method="POST">
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Empresa</label>
+            <input type="text" class="form-control" name="empresa" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mensaje</label>
+            <textarea class="form-control" rows="4" name="mensaje" required></textarea>
+          </div>
+          <button class="btn btn-coral w-100" type="submit">
+           Enviar
+          </button>
+        </form>
+         <p id="confirmacion" style="display:none; color: var(--color-turquesa-oscuro); margin-top:15px;">
+    ¡Mensaje enviado! En breve nos contactaremos con usted.
+          </p>
+      </div>
+
+      <!-- Card WhatsApp -->
+      <div class="col-lg-4">
+        <div class="p-4 shadow-sm rounded bg-white h-100 d-flex flex-column justify-content-center align-items-center text-center">
+    <!-- Imagen de WhatsApp -->
+    <img src="img/whatsapp.png" alt="WhatsApp" style="width:60px; height:60px; margin-bottom:15px;">
+          <p class="mb-4">Escribinos por WhatsApp para más información o para coordinar una reunión:</p>
+          <a href="https://wa.me/5491164272269" target="_blank" class="btn btn-coral btn-lg">
+            Contactar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+   <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <small>© 2025 Work Balance — Todos los derechos reservados</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
