@@ -49,9 +49,26 @@ body {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* un poquito más fuerte al pasar el mouse */
 }
 
+.dropdown-menu {
+    background-color: var(--color-turquesa-oscuro) !important;; /* color de fondo deseado */
+}
+
+/* Color de los links dentro del dropdown */
+.dropdown-item {
+  color: var(--color-blanco) !important;
+  font-weight: 400;/* color del texto */
+}
+
+/* Hover: fondo y texto cuando paso el mouse */
+.dropdown-item:hover {
+  color: var(--color-coral) !important;
+  background-color: var(--color-gris-oscuro);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* color del texto al pasar el mouse */
+}
+
 /* Compensa el navbar fijo en los anclajes */
 :target {
-  scroll-margin-top: 50px; /* mismo alto que el navbar */
+  scroll-margin-top: -50px; /* mismo alto que el navbar */
 }
 
 /* Secciones */
@@ -96,6 +113,20 @@ section:nth-child(even) {
 
 .titulo-empleados {
   color: var(--color-gris-oscuro);
+}
+
+/* Lista con íconos */
+.icon-list{ list-style:none; margin:0; padding:0; }
+.icon-list li{
+  display: grid;
+  grid-template-columns: 200px 1fr; /* 200px fijo para la negrita, el resto ocupa el espacio */
+  gap: 20px;
+  padding: 8px 8px;
+  align-items: flex-start;
+}
+.icon-list i{ color: var(--primary); margin-top: 2px; }
+.icon-list li b {
+  min-width: 250px;  /* asegura que todas las etiquetas <b> ocupen el mismo ancho */
 }
 
 h2 {
@@ -158,9 +189,11 @@ form textarea:focus {
   place-items: center;
 }
 
-.parallax--autogestion{ background-image: url("../img/parallax--autogestion.jpg"); }
+.parallax--autogestion{ background-image: url("../img/parallax--autogestion.png"); }
 .parallax--movilidad{ background-image: url("../img/parallax--movilidad.jpg"); }
 .parallax--recreacion{ background-image: url("../img/parallax--recreacion.jpg"); }
+.parallax--seguridad{ min-height: 85vh; background-image: url("../img/seguridad.jpg"); }
+.parallax--medicina{ background-image: url("../img/parallax-medicina.jpg"); }
 
 /* Oscurecer para legibilidad */
 .parallax::before{
@@ -188,7 +221,7 @@ form textarea:focus {
   min-height: 100vh; /* ocupa toda la pantalla en alto */
   margin: 0;         /* sin márgenes */
   padding: 0;        /* sin padding */
-  background-image: url("../img/hero.webp");
+  background-image: url("../img/hero.png");
   background-size: cover;
   background-position: center;
   display: flex;
