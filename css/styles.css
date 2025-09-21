@@ -44,9 +44,18 @@ body {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* sombra para los links */
 }
 
-.navbar .nav-link:hover {
+.nav-link.active,
+.dropdown-item.active{
+  color: var(--color-gris-oscuro);
+  background-color: var(--color-coral);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.navbar .nav-link:hover,
+.dropdown-item:hover {
   color: var(--color-coral) !important;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* un poquito más fuerte al pasar el mouse */
+  background-color: var(--color-gris-oscuro);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);/* un poquito más fuerte al pasar el mouse */
 }
 
 .dropdown-menu {
@@ -57,13 +66,6 @@ body {
 .dropdown-item {
   color: var(--color-blanco) !important;
   font-weight: 400;/* color del texto */
-}
-
-/* Hover: fondo y texto cuando paso el mouse */
-.dropdown-item:hover {
-  color: var(--color-coral) !important;
-  background-color: var(--color-gris-oscuro);
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* color del texto al pasar el mouse */
 }
 
 /* Compensa el navbar fijo en los anclajes */
