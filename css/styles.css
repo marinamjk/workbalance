@@ -12,10 +12,9 @@ html, body {
   scroll-behavior: smooth; 
 }
 
-/* General */
 body {
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* fuente por defecto */
-  font-size: 1.25rem; /* un poco más grande que el texto normal */
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+  font-size: 1.25rem; 
   font-weight: 400; 
   color: var(--color-gris-oscuro); 
   background: var(--color-blanco);
@@ -24,7 +23,6 @@ body {
   padding: 0;
 }
 
-/* Navbar */
 .navbar {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   background-color: var(--color-turquesa-oscuro) !important;
@@ -35,13 +33,13 @@ body {
   color: var(--color-coral);
   font-weight: 600;
   font-size: 1.5rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); ; /* sombra suave */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); ; 
 }
 
 .navbar .nav-link {
   color: var(--color-blanco) !important;
   transition: color 0.3s;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* sombra para los links */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
 }
 
 .nav-link.active,
@@ -55,25 +53,25 @@ body {
 .dropdown-item:hover {
   color: var(--color-coral) !important;
   background-color: var(--color-gris-oscuro);
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);/* un poquito más fuerte al pasar el mouse */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .dropdown-menu {
-    background-color: var(--color-turquesa-oscuro) !important;; /* color de fondo deseado */
+    background-color: var(--color-turquesa-oscuro) !important;
 }
 
-/* Color de los links dentro del dropdown */
+
 .dropdown-item {
   color: var(--color-blanco) !important;
-  font-weight: 400;/* color del texto */
+  font-weight: 400;
 }
 
-/* Compensa el navbar fijo en los anclajes */
+
 :target {
-  scroll-margin-top: -50px; /* mismo alto que el navbar */
+  scroll-margin-top: -50px;
 }
 
-/* Secciones */
+
 section {
   padding: 80px 20px;
 }
@@ -84,7 +82,7 @@ section:nth-child(even) {
 
 .section--alt{ background: #ffffff; }
 
-/* ===== Cards y bloques ===== */
+
 .section-card{
   background:#fff;
   border:1px solid #eef2f7;
@@ -103,10 +101,9 @@ section:nth-child(even) {
   z-index: 10;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  /* Sombra arriba y abajo, sin lateral */
   box-shadow: 
-    0 -6px 5px rgba(255, 255, 255, 0.459), /* sombra hacia arriba */
-    0 6px 5px rgba(255, 255, 255, 0.459);  /* sombra hacia abajo */
+    0 -6px 5px rgba(255, 255, 255, 0.459),
+    0 6px 5px rgba(255, 255, 255, 0.459); 
 }
 
 .titulo-empleador {
@@ -117,19 +114,40 @@ section:nth-child(even) {
   color: var(--color-gris-oscuro);
 }
 
-/* Lista con íconos */
-.icon-list{ list-style:none; margin:0; padding:0; }
-.icon-list li{
+
+.icon-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-list li {
   display: grid;
-  grid-template-columns: 200px 1fr; /* 200px fijo para la negrita, el resto ocupa el espacio */
-  gap: 20px;
-  padding: 8px 8px;
+  grid-template-columns: 250px 1fr; /* dos columnas en escritorio */
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
   align-items: flex-start;
 }
-.icon-list i{ color: var(--primary); margin-top: 2px; }
+
 .icon-list li b {
-  min-width: 250px;  /* asegura que todas las etiquetas <b> ocupen el mismo ancho */
+  font-weight: bold;
 }
+
+
+@media (max-width: 768px) {
+  .icon-list li {
+    grid-template-columns: 1fr; 
+  }
+
+  .icon-list li b {
+    margin-bottom: 5px;
+    display: block;
+  }
+}
+
+.icon-list i{ color: var(rgb(15, 198, 24)); margin-top: 2px; }
+
 
 h2 {
   color: var(--color-turquesa-oscuro);
@@ -143,7 +161,7 @@ h5{
   font-weight: 700;
   margin-bottom: 20px;
 }
-/* Botones */
+
 .btn-primary {
   background-color: var(--color-turquesa-oscuro);
   color: var(--color-blanco);
@@ -164,11 +182,10 @@ h5{
 }
 
 .btn-coral:hover {
-  background-color: var(--color-turquesa-oscuro); /* un poco más oscuro para hover */
+  background-color: var(--color-turquesa-oscuro); 
   color: var(--color-blanco);
 }
 
-/* Formularios */
 form input, 
 form textarea {
   border: 1px solid var(--color-borde);
@@ -180,7 +197,6 @@ form textarea:focus {
   box-shadow: 0 0 5px rgba(48, 207, 207, 0.3);
 }
 
-/* ===== Parallax (Hero + separadores) ===== */
 .parallax{
   position: relative;
   min-height: 55vh;
@@ -197,7 +213,7 @@ form textarea:focus {
 .parallax--seguridad{ min-height: 85vh; background-image: url("../img/seguridad.jpg"); }
 .parallax--medicina{ background-image: url("../img/parallax-medicina.jpg"); }
 
-/* Oscurecer para legibilidad */
+
 .parallax::before{
   content:"";
   position:absolute; inset:0;
@@ -212,17 +228,16 @@ form textarea:focus {
   backdrop-filter: blur(1px) saturate(1.1);
 }
 
-/* Fallback mobile: iOS no soporta bien background-attachment:fixed */
 @media (max-width: 768px){
   .parallax{ background-attachment: scroll; }
 }
 
 .hero {
   position: relative;
-  width: 100%;       /* ocupa todo el ancho */
-  min-height: 100vh; /* ocupa toda la pantalla en alto */
-  margin: 0;         /* sin márgenes */
-  padding: 0;        /* sin padding */
+  width: 100%;       
+  min-height: 100vh; 
+  margin: 0;      
+  padding: 0;     
   background-image: url("../img/hero.png");
   background-size: cover;
   background-position: center;
@@ -231,7 +246,6 @@ form textarea:focus {
   align-items: center;
 }
 
-/* Oscurecer para legibilidad */
 .hero::before {
   content: "";
   position: absolute;
@@ -247,11 +261,11 @@ form textarea:focus {
 }
 
 .hero-img img {
-  max-width: 150px; /* Tamaño de la imagen */
+  max-width: 150px; 
   height: auto;
 }
 
-/* Animaciones */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
